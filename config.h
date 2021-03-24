@@ -62,8 +62,8 @@ static const char *browser[]  = { "chromium", NULL };
 
 static Key keys[] = {
     /* modifier                     key        function        argument */
-    { Mod1Mask,                     XK_Return,  spawn,         {.v = dmenucmd } },
-    { MODKEY,                       XK_t,      spawn,          {.v = termcmd } },
+    { Mod1Mask,                     XK_space,  spawn,         {.v = dmenucmd } },
+    { MODKEY,                       XK_Return,      spawn,          {.v = termcmd } },
     { MODKEY,                       XK_2,      spawn,          {.v = browser } },
     { MODKEY,                       XK_a,      togglebar,      {0} },
     { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
