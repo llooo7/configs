@@ -17,7 +17,7 @@ static const char col_ordk[]        = "#772E09";
 static const char *colors[][3]      = {
     /*               fg         bg         border   */
     [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-    [SchemeSel]  = { col_gray4, col_oran,  col_ordk  },
+    [SchemeSel]  = { col_gray4, col_ordk,  col_ordk  },
 };
 
 /* tagging */
