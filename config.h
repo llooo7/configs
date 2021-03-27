@@ -60,10 +60,12 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *fileman[]  = { "st nnn", NULL };
+static const char *fileman[]  = { "st & nnn", NULL };
 static const char *browser[]  = { "brave", NULL };
 static const char *discord[]  = { "discord", NULL };
 static const char *spotify[]  = { "spotify", NULL };
+static const char *sublime[]  = { "sublime-text.subl", NULL };
+
 
 static Key keys[] = {
     /* modifier                     key        function        argument */
@@ -72,7 +74,8 @@ static Key keys[] = {
     { MODKEY,                       XK_1,      spawn,          {.v = fileman } },
     { MODKEY,                       XK_2,      spawn,          {.v = browser } },
     { MODKEY,                       XK_4,      spawn,          {.v = spotify } },
-    { MODKEY,                       XK_5,      spawn,          {.v = discord } },
+    { MODKEY,                       XK_5,      spawn,          {.v = discord } },        
+    { MODKEY,                       XK_6,      spawn,          {.v = sublime } },
     { MODKEY,                       XK_a,      togglebar,      {0} },
     { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
     { MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -103,7 +106,7 @@ static Key keys[] = {
     TAGKEYS(                        XK_7,                      6)
     TAGKEYS(                        XK_8,                      7)
     TAGKEYS(                        XK_9,                      8)
-    { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+    { Mod1Mask|ShiftMask,             XK_q,      quit,           {0} },
 };
 
 /* button definitions */
