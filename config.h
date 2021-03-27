@@ -14,11 +14,12 @@ static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char col_oran[]        = "#CA5010";
 static const char col_orli[]        = "#ffaa4f";
+static const char col_walp[]        = "#e7ad7c";
 static const char col_ordk[]        = "#772E09";
 static const char *colors[][3]      = {
     /*               fg         bg         border   */
-    [SchemeNorm] = { col_orli,  col_gray1, col_gray1 },
-    [SchemeSel]  = { col_gray1, col_orli,  col_orli  },
+    [SchemeNorm] = { col_walp,  col_gray1, col_gray1 },
+    [SchemeSel]  = { col_gray1, col_walp,  col_walp  },
 };
 
 
