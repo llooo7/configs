@@ -76,6 +76,7 @@ static const char *browser[]  = { "brave", NULL };
 static const char *discord[]  = { "discord", NULL };
 static const char *spotify[]  = { "spotify", NULL };
 static const char *sublime[]  = { "sublime-text.subl", NULL };
+static const char *lockscr[]  = { "slock", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -86,6 +87,7 @@ static Key keys[] = {
     { MODKEY,                       XK_4,      spawn,          {.v = spotify } },
     { MODKEY,                       XK_5,      spawn,          {.v = discord } },        
     { MODKEY,                       XK_6,      spawn,          {.v = sublime } },
+    { Mod1Mask,                       XK_l,      spawn,          {.v = lockscr } },
     { MODKEY,                       XK_a,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
