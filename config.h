@@ -76,8 +76,8 @@ static const char *browser[]  = { "brave", NULL };
 static const char *discord[]  = { "discord", NULL };
 static const char *spotify[]  = { "spotify", NULL };
 static const char *sublime[]  = { "sublime-text.subl", NULL };
-static const char *lockscr[]  = { "slock", NULL };
-static const char *sleeeep[]  = { "systemctl suspend", NULL };
+//static const char *lockscr[]  = { "slock", NULL };
+//static const char *sleeeep[]  = { "systemctl suspend", NULL };
 //static const char *screens[]  = { "import $(date + "%F-%H-%M").png", NULL }; 
 
 static Key keys[] = {
