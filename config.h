@@ -76,7 +76,8 @@ static const char *browser[]  = { "brave", NULL };
 static const char *discord[]  = { "discord", NULL };
 static const char *spotify[]  = { "spotify", NULL };
 static const char *sublime[]  = { "sublime-text.subl", NULL };
-static const char *lockscr[]  = { "slock & systemctl suspend", NULL };
+static const char *lockscr[]  = { "slock", NULL };
+static const char *sleeeep[]  = { "systemctl suspend", NULL };
 //static const char *screens[]  = { "import $(date + "%F-%H-%M").png", NULL }; 
 
 static Key keys[] = {
@@ -89,6 +90,8 @@ static Key keys[] = {
     { MODKEY,                       XK_5,      spawn,          {.v = discord } },        
     { MODKEY,                       XK_6,      spawn,          {.v = sublime } },
     { Mod1Mask,                     XK_l,      spawn,          {.v = lockscr } },
+    { Mod1Mask|ShiftMask,           XK_l,      spawn,          {.v = sleeeep } },
+
   //  { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = screens } }, //screenshot
     { MODKEY,                       XK_a,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
