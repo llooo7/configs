@@ -90,7 +90,7 @@ static Key keys[] = {
     { MODKEY,                       XK_5,      spawn,          {.v = discord } },        
     { MODKEY,                       XK_6,      spawn,          {.v = sublime } },
     { Mod1Mask,                     XK_l,      spawn,          {.v = lockscr } },
-    { Mod1Mask|ShiftMask,           XK_l,      spawn,          {.v = sleeeep } },
+    { Mod1Mask|ShiftMask,           XK_l,      spawn,          SHCMD("systemctl suspend") },
 
   //  { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = screens } }, //screenshot
     { MODKEY,                       XK_a,      togglebar,      {0} },
