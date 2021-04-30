@@ -90,7 +90,7 @@ static Key keys[] = {
     { MODKEY,                       XK_5,      spawn,          {.v = discord } },        
     { MODKEY,                       XK_6,      spawn,          {.v = sublime } },
     { Mod1Mask,                     XK_l,      spawn,          SHCMD("slock & systemctl suspend") },
-    { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("import /home/luka/Screenshots/$(date +'%F-%H-%M').png" }, //screenshot
+//    { MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("import /home/luka/Screenshots/$(date +\"%F-%H-%M\").png" }, //screenshot
     { MODKEY,                       XK_a,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
